@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+    Exercici 8
+    Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2. 
+    Estructura la funció per a que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+
+    var resultat = calculadora('resta',40,20)
+    -->
+
+    
+   <h4>El resultat de l'operacio es</h4>  
+    <p id="resultatOperacio"></p>
+
+    
+    <script>
+
+        function calculadora(operador, valor1, valor2){
+
+            let resultat;
+
+            switch(operador){
+
+                case "suma":
+                    resultat = valor1 + valor2;
+                    break;
+
+                case "resta":
+                    resultat = valor1 - valor2;
+                    break;
+
+                case "multiplicacio":
+                    resultat = valor1 * valor2;
+                    break;
+            }
+
+            document.getElementById("resultatOperacio").innerHTML = resultat ;
+            
+        }
+
+        
+         //Cridem a la funcio amb valors fixes
+
+         var resultat = calculadora ('resta', 40, 20);
+        
+
+
+        /*Cridem a la funcio amb variables
+
+        var operador_calculadora = 'resta';
+        var valor1_calculadora = 40;
+        var valor2_calculadora = 20;
+
+        var resultat = calculadora(operador_calculadora, valor1_calculadora, valor2_calculadora);*/
+    
+    </script>
+
+</body>
+</html>

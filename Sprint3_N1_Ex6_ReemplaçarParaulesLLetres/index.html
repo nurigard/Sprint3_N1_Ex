@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Reemplaça la paraula blau per la paraula verd del següent text "Tinc un cotxe de color blau". Després intenta fer-ho remplaçant les o per les u.
+    -->
+
+
+    <script>
+
+        const partFrase = "Tinc un cotxe de color"; 
+        var color = "blau";
+
+        console.log(partFrase + " " + color);
+
+        color = "verd";
+        console.log(partFrase + " " + color);
+
+
+
+
+        //Reemplaçar les "o" per les "u"
+
+        let frase = "tinc un cotxe de color blau";
+        let fraseArray = frase.split("");
+        console.log(fraseArray);
+
+        text="";
+
+        for (i=0; i<fraseArray.length; i++){
+
+            if(fraseArray[i]==="o"){
+                fraseArray[i]="u";
+            }
+
+             text += fraseArray[i];  
+        }
+
+        console.log(text);
+
+    </script>
+</body>
+</html>

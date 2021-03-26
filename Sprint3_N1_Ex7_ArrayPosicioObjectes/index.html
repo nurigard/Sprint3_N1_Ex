@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Donat el seguit llistat d'objectes 'taula', 'cadira', 'ordinador', 'libreta', per un bucle que mostri per pantalla cada objecte i la seva posició al llistat.
+        Resultat: L'objecte taula està a la posicio 0
+                  L'objecte cadira està a la posicio 1
+                  L'objecte ordinador està a la posicio 2
+                  L'objecte libreta està a la posicio 3
+    -->
+
+    <script>
+
+        //Versio 1
+
+         var objectesOficina = ["taula", "cadira", "ordinador", "llibreta"]
+         let i=0;
+
+        for (let objecteX of objectesOficina){
+
+            console.log("L'objecte " + objectesOficina[i] + " està a la posicio " + i )
+
+            i++
+        }
+
+        
+
+
+        //Versio 2
+
+        /*
+        var objectesOficina = ["taula", "cadira", "ordinador", "llibreta"];
+
+        for (let objecteX of objectesOficina){
+
+            let posicioArray = objectesOficina.indexOf(objecteX,0);
+
+            console.log("L'objecte " + objecteX + " esta a la posicio " + posicioArray);
+
+        }*/
+
+    </script>
+   
+
+</body>
+</html>
